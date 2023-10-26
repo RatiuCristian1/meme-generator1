@@ -39,33 +39,35 @@ export default function AppMain() {
 
     return (
         <>
-            <div className="main--container">
-                <input 
-                    className="input1" 
-                    type="text" 
-                    placeholder="Top Text"
-                    name="topText"
-                    value={meme.topText}
-                    onChange={handleChange}
-                />
-                <input 
-                    className="input2" 
-                    type="text"
-                    placeholder="Bottom Text" 
-                    name="bottomText"
-                    value={meme.bottomText}
-                    onChange={handleChange}
-                />
-                <button
-                    onClick={getMemeImage}
-                >
-                    Generate Meme
-                </button>
-            </div>
-            <div className="meme">
-                <img src={meme.randomImage} className="meme--image" />
-                <h2 className="meme--text top">{meme.topText}</h2>
-                <h2 className="meme--text bottom">{meme.bottomText}</h2>
+            <div className="container">
+                <div className="main--container">
+                    <input 
+                        className="input1" 
+                        type="text" 
+                        placeholder="Top Text"
+                        name="topText"
+                        value={meme.topText}
+                        onChange={handleChange}
+                    />
+                    <input 
+                        className="input2" 
+                        type="text"
+                        placeholder="Bottom Text" 
+                        name="bottomText"
+                        value={meme.bottomText}
+                        onChange={handleChange}
+                    />
+                    <button
+                        onClick={getMemeImage}
+                    >
+                        Generate Meme
+                    </button>
+                </div>
+                <div className="meme">
+                    <img src={meme.randomImage} className="meme--image" />
+                    <h2 className="meme--text top">{meme.topText}</h2>
+                    <h2 className="meme--text bottom">{meme.bottomText}</h2>
+                </div>
             </div>
         </>
     )
