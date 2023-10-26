@@ -49,3 +49,38 @@ button {
     border: none;
     text-indent: 5px;
 }
+
+.meme {
+    position: relative;
+}
+
+.meme--image {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.meme--text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    color: aliceblue;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.top {
+    top: 0;
+}
+
+@media screen and (max-width: 450px) { 
+    .meme--image {     
+        max-width: 100%;
+        border: 5px solid red;
+    }
+}
