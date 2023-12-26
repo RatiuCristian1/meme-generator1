@@ -65,8 +65,8 @@ export default function AppMain() {
                 </div>
                 <div className="meme">
                     <img src={meme.randomImage} className="meme--image" />
-                    <h2 className="meme--text top">{meme.topText}</h2>
-                    <h2 className="meme--text bottom">{meme.bottomText}</h2>
+                    <h2 className="meme--text top" style={{ color: 'black', textShadow: '0px 0px 5px #fff', fontSize: '1.25rem', fontFamily: 'Roboto, sans-serif'}}>{meme.topText}</h2>
+                    <h2 className="meme--text bottom" style={{ color: 'black', textShadow: '0px 0px 5px #fff', fontSize: '1.25rem', fontFamily: 'Roboto, sans-serif'}}>{meme.bottomText}</h2>
                 </div>
             </div>
         </>
